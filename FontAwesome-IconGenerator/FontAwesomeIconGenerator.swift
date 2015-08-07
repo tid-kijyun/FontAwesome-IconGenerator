@@ -63,8 +63,6 @@ class FontAwesomeIconGenerator: NSObject {
     }
     
     func show(sender: AnyObject?) {
-        NSLog("MENU CLICK")
-        NSLog("ABC")
         showWindow()
     }
     
