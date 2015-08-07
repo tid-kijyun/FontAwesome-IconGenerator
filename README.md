@@ -1,0 +1,2 @@
+# FontAwesome-IconGenerator
+xcode plugin
