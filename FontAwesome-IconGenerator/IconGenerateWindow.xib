@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="IconGenerateWindowController" customModule="FontAwesome_IconGenerator" customModuleProvider="target">
+            <connections>
+                <outlet property="checkAutoFontSize" destination="eaI-CF-U6t" id="Zmg-8u-fAx"/>
+                <outlet property="checkSizeX2" destination="NYN-1L-HiX" id="w8O-jh-N8k"/>
+                <outlet property="checkSizeX3" destination="2Af-Cd-n7H" id="HfS-jP-IIZ"/>
+                <outlet property="comboBox" destination="J1Q-zw-8wH" id="1ck-VH-MHv"/>
+                <outlet property="comboBoxColor" destination="bYy-ka-M3j" id="6hu-Ex-clN"/>
+                <outlet property="comboBoxFontSize" destination="Abr-iC-6xH" id="Ftz-0M-lwL"/>
+                <outlet property="comboBoxImageSize" destination="3mY-ah-G0K" id="j5n-jk-7nm"/>
+                <outlet property="imageSample" destination="Mog-be-sGT" id="KMx-La-biU"/>
+                <outlet property="progressIndicator" destination="oVy-uj-bWB" id="KqV-Il-odO"/>
+                <outlet property="textFileName" destination="viW-ZJ-7Qx" id="BJl-Xf-5cR"/>
+                <outlet property="textProgress" destination="cOI-dp-yAL" id="gwn-8H-2jI"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="FontAwesome-IconGenerator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" frameAutosaveName="MyKey" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="640" height="300"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="640" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pe5-fj-d2o">
+                        <rect key="frame" x="522" y="17" width="94" height="32"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="P95-2g-Avt">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="click:" target="-2" id="8Bd-Yq-Tfr"/>
+                        </connections>
+                    </button>
+                    <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J1Q-zw-8wH">
+                        <rect key="frame" x="355" y="255" width="258" height="26"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="icon" drawsBackground="YES" numberOfVisibleItems="12" id="5xS-Uy-qWb">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </comboBoxCell>
+                        <connections>
+                            <action selector="comboBoxClicked:" target="-2" id="ywt-nf-8OB"/>
+                        </connections>
+                    </comboBox>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mog-be-sGT">
+                        <rect key="frame" x="17" y="21" width="262" height="262"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageFrameStyle="grayBezel" id="kfs-ns-uQQ"/>
+                    </imageView>
+                    <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bYy-ka-M3j">
+                        <rect key="frame" x="355" y="228" width="93" height="26"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="color" drawsBackground="YES" completes="NO" numberOfVisibleItems="3" id="6cz-3K-ubF">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <objectValues>
+                                <string>Black</string>
+                                <string>White</string>
+                            </objectValues>
+                        </comboBoxCell>
+                        <connections>
+                            <action selector="comboBoxClicked:" target="-2" id="Ox5-tZ-lRn"/>
+                        </connections>
+                    </comboBox>
+                    <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3mY-ah-G0K">
+                        <rect key="frame" x="355" y="200" width="93" height="26"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="size" drawsBackground="YES" completes="NO" numberOfVisibleItems="12" id="JzA-kb-FZt">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </comboBoxCell>
+                        <connections>
+                            <action selector="comboBoxClicked:" target="-2" id="LVN-5R-aWW"/>
+                        </connections>
+                    </comboBox>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O9L-On-HMb">
+                        <rect key="frame" x="288" y="262" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Icon:" id="gvH-Xf-wMQ">
+                            <font key="font" size="12" name="HiraKakuPro-W3"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CMN-qZ-HZ5">
+                        <rect key="frame" x="288" y="234" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Color:" id="Pfg-Vp-ind">
+                            <font key="font" size="12" name="HiraKakuPro-W3"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xo3-UB-nT4">
+                        <rect key="frame" x="288" y="206" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Size:" id="WgF-1d-oKd">
+                            <font key="font" size="12" name="HiraKakuPro-W3"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jSU-Rg-w90">
+                        <rect key="frame" x="288" y="178" width="61" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Font size:" id="rr5-Us-edl">
+                            <font key="font" size="12" name="HiraKakuPro-W3"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nZy-mk-STm">
+                        <rect key="frame" x="288" y="144" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name:" id="8aT-Kg-8m6">
+                            <font key="font" size="12" name="HiraKakuPro-W3"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="viW-ZJ-7Qx">
+                        <rect key="frame" x="355" y="141" width="255" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="filename" drawsBackground="YES" id="rsf-c4-iKG">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OsP-Ed-XTU">
+                        <rect key="frame" x="428" y="17" width="94" height="32"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ecp-sZ-v68">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NYN-1L-HiX">
+                        <rect key="frame" x="463" y="200" width="41" height="25"/>
+                        <buttonCell key="cell" type="check" title="x2" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="UwX-1P-sWa">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" size="12" name="HiraKakuPro-W3"/>
+                        </buttonCell>
+                    </button>
+                    <progressIndicator fixedFrame="YES" maxValue="100" doubleValue="9" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="oVy-uj-bWB">
+                        <rect key="frame" x="578" y="53" width="32" height="32"/>
+                    </progressIndicator>
+                    <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Abr-iC-6xH">
+                        <rect key="frame" x="355" y="172" width="93" height="26"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="font size" drawsBackground="YES" completes="NO" numberOfVisibleItems="12" id="h6E-EE-xsi">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </comboBoxCell>
+                        <connections>
+                            <action selector="comboBoxClicked:" target="-2" id="QeS-SG-HqT"/>
+                        </connections>
+                    </comboBox>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eaI-CF-U6t">
+                        <rect key="frame" x="463" y="171" width="51" height="25"/>
+                        <buttonCell key="cell" type="check" title="Auto" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="AHi-Vt-JeU">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" size="12" name="HiraKakuPro-W3"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="checkAuto:" target="-2" id="ilr-aP-Lrh"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Af-Cd-n7H">
+                        <rect key="frame" x="508" y="200" width="41" height="25"/>
+                        <buttonCell key="cell" type="check" title="x3" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="ac4-OI-GPR">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" size="12" name="HiraKakuPro-W3"/>
+                        </buttonCell>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cOI-dp-yAL">
+                        <rect key="frame" x="432" y="61" width="140" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" id="8Sc-Sp-k0R">
+                            <font key="font" size="12" name="HiraKakuPro-W6"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="220" y="353"/>
+        </window>
+    </objects>
+</document>

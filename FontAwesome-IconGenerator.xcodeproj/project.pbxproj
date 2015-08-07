@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E2FE9491B749C3E00A42FB2 /* IconGenerateWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E2FE9481B749C3E00A42FB2 /* IconGenerateWindow.xib */; };
+		1E2FE94B1B749C5900A42FB2 /* IconGenerateWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2FE94A1B749C5900A42FB2 /* IconGenerateWindowController.swift */; };
+		1E57F0C81B74FC4E00919E47 /* IconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57F0C71B74FC4E00919E47 /* IconGenerator.swift */; };
+		1E9F51781B749BD1009853CF /* FontAwesomeIconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F51771B749BD1009853CF /* FontAwesomeIconGenerator.swift */; };
+		1EB164A71B749D9C00837901 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EB164A61B749D9C00837901 /* fontawesome-webfont.ttf */; };
+		1ED583F41B74CA85008D962C /* FontAwesomeIconList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED583F31B74CA85008D962C /* FontAwesomeIconList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E2FE9481B749C3E00A42FB2 /* IconGenerateWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IconGenerateWindow.xib; sourceTree = "<group>"; };
+		1E2FE94A1B749C5900A42FB2 /* IconGenerateWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconGenerateWindowController.swift; sourceTree = "<group>"; };
+		1E57F0C71B74FC4E00919E47 /* IconGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconGenerator.swift; sourceTree = "<group>"; };
+		1E9F516D1B749AD1009853CF /* FontAwesome-IconGenerator.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FontAwesome-IconGenerator.xcplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E9F51711B749AD1009853CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E9F51771B749BD1009853CF /* FontAwesomeIconGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeIconGenerator.swift; sourceTree = "<group>"; };
+		1EB164A61B749D9C00837901 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		1ED583F31B74CA85008D962C /* FontAwesomeIconList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeIconList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E9F516A1B749AD1009853CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E9F51641B749AD1009853CF = {
+			isa = PBXGroup;
+			children = (
+				1E9F516F1B749AD1009853CF /* FontAwesome-IconGenerator */,
+				1E9F516E1B749AD1009853CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E9F516E1B749AD1009853CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E9F516D1B749AD1009853CF /* FontAwesome-IconGenerator.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E9F516F1B749AD1009853CF /* FontAwesome-IconGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				1E9F51701B749AD1009853CF /* Supporting Files */,
+				1E9F51771B749BD1009853CF /* FontAwesomeIconGenerator.swift */,
+				1E2FE94A1B749C5900A42FB2 /* IconGenerateWindowController.swift */,
+				1E57F0C71B74FC4E00919E47 /* IconGenerator.swift */,
+				1ED583F31B74CA85008D962C /* FontAwesomeIconList.swift */,
+				1E2FE9481B749C3E00A42FB2 /* IconGenerateWindow.xib */,
+				1EB164A61B749D9C00837901 /* fontawesome-webfont.ttf */,
+			);
+			path = "FontAwesome-IconGenerator";
+			sourceTree = "<group>";
+		};
+		1E9F51701B749AD1009853CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E9F51711B749AD1009853CF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E9F516C1B749AD1009853CF /* FontAwesome-IconGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E9F51741B749AD1009853CF /* Build configuration list for PBXNativeTarget "FontAwesome-IconGenerator" */;
+			buildPhases = (
+				1E9F51691B749AD1009853CF /* Sources */,
+				1E9F516A1B749AD1009853CF /* Frameworks */,
+				1E9F516B1B749AD1009853CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FontAwesome-IconGenerator";
+			productName = "FontAwesome-IconGenerator";
+			productReference = 1E9F516D1B749AD1009853CF /* FontAwesome-IconGenerator.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E9F51651B749AD1009853CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Atsushi Kiwaki";
+				TargetAttributes = {
+					1E9F516C1B749AD1009853CF = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 1E9F51681B749AD1009853CF /* Build configuration list for PBXProject "FontAwesome-IconGenerator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1E9F51641B749AD1009853CF;
+			productRefGroup = 1E9F516E1B749AD1009853CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E9F516C1B749AD1009853CF /* FontAwesome-IconGenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E9F516B1B749AD1009853CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2FE9491B749C3E00A42FB2 /* IconGenerateWindow.xib in Resources */,
+				1EB164A71B749D9C00837901 /* fontawesome-webfont.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E9F51691B749AD1009853CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E9F51781B749BD1009853CF /* FontAwesomeIconGenerator.swift in Sources */,
+				1E2FE94B1B749C5900A42FB2 /* IconGenerateWindowController.swift in Sources */,
+				1E57F0C81B74FC4E00919E47 /* IconGenerator.swift in Sources */,
+				1ED583F41B74CA85008D962C /* FontAwesomeIconList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1E9F51721B749AD1009853CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1E9F51731B749AD1009853CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1E9F51751B749AD1009853CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "FontAwesome-IconGenerator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		1E9F51761B749AD1009853CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "FontAwesome-IconGenerator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E9F51681B749AD1009853CF /* Build configuration list for PBXProject "FontAwesome-IconGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E9F51721B749AD1009853CF /* Debug */,
+				1E9F51731B749AD1009853CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E9F51741B749AD1009853CF /* Build configuration list for PBXNativeTarget "FontAwesome-IconGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E9F51751B749AD1009853CF /* Debug */,
+				1E9F51761B749AD1009853CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E9F51651B749AD1009853CF /* Project object */;
+}
